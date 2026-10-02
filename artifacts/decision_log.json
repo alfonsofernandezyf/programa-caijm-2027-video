@@ -1,0 +1,100 @@
+{
+  "version": "1.0",
+  "project_id": "programa-caijm-2027",
+  "decisions": [
+    {
+      "decision_id": "d-001", "stage": "proposal", "category": "concept_selection", "subject": "Concepto narrativo principal",
+      "options_considered": [
+        {"option_id": "c1", "label": "Tres sábados, un mapa clínico", "score": 0.93, "reason": "Máxima recordación y claridad."},
+        {"option_id": "c2", "label": "La agenda cobra movimiento", "score": 0.77, "reason": "Muy informativo, menos distintivo.", "rejected_because": "Menor impacto de marca."},
+        {"option_id": "c3", "label": "Conocimiento que conecta", "score": 0.81, "reason": "Visualmente rico, menos preciso con fechas.", "rejected_because": "Prioriza metáfora sobre agenda."}
+      ],
+      "selected": "c1", "reason": "Aprobación explícita del usuario y mejor equilibrio entre rigor, recordación y ritmo.", "user_visible": true, "user_approved": true, "confidence": 0.98
+    },
+    {
+      "decision_id": "d-002", "stage": "proposal", "category": "render_runtime_selection", "subject": "Runtime de composición",
+      "options_considered": [
+        {"option_id": "hyperframes", "label": "HyperFrames", "score": 0.94, "reason": "Ideal para tipografía cinética y HTML/CSS/GSAP."},
+        {"option_id": "remotion", "label": "Remotion", "score": 0.82, "reason": "Excelente para timelines React reutilizables.", "rejected_because": "Menor ventaja para esta coreografía tipográfica artesanal."}
+      ],
+      "selected": "hyperframes", "reason": "El usuario aprobó la recomendación después de ver ambas alternativas y sus tradeoffs.", "user_visible": true, "user_approved": true, "confidence": 0.95
+    },
+    {
+      "decision_id": "d-003", "stage": "proposal", "category": "composition_mode", "subject": "Modo de autoría",
+      "options_considered": [
+        {"option_id": "atelier", "label": "Atelier", "score": 0.96, "reason": "Pieza hero única con lenguaje visual propio."},
+        {"option_id": "templated", "label": "Templated", "score": 0.66, "reason": "Más rápido y repetible.", "rejected_because": "El entregable único merece mayor distintividad."}
+      ],
+      "selected": "atelier", "reason": "Aprobación explícita; el video requiere identidad específica de CAIJM.", "user_visible": true, "user_approved": true, "confidence": 0.96
+    },
+    {
+      "decision_id": "d-004", "stage": "proposal", "category": "music_source", "subject": "Arquitectura de audio",
+      "options_considered": [
+        {"option_id": "music_only", "label": "Música sin locución", "score": 0.91, "reason": "Favorece lectura móvil y no compite con los términos clínicos."},
+        {"option_id": "kokoro_voice", "label": "Locución local Kokoro más música", "score": 0.74, "reason": "Añade guía auditiva.", "rejected_because": "Sobrecarga una pieza breve ya intensiva en texto."}
+      ],
+      "selected": "music_only", "reason": "Aprobado por el usuario como parte de la recomendación.", "user_visible": true, "user_approved": true, "confidence": 0.9
+    },
+    {
+      "decision_id": "d-005", "stage": "proposal", "category": "renderer_family_selection", "subject": "Gramática creativa",
+      "options_considered": [
+        {"option_id": "animation-first", "label": "Animation-first", "score": 0.95, "reason": "El material fuente es gráfico y la promesa depende del movimiento."},
+        {"option_id": "documentary-montage", "label": "Documentary montage", "score": 0.45, "reason": "Adecuado si hubiera metraje.", "rejected_because": "No existe footage fuente."}
+      ],
+      "selected": "animation-first", "reason": "Preserva nitidez, jerarquía y energía con los recursos realmente disponibles.", "user_visible": true, "user_approved": true, "confidence": 0.97
+    },
+    {
+      "decision_id": "d-006", "stage": "assets", "category": "visual_accuracy_check", "subject": "Fidelidad a la identidad visual CAIJM",
+      "options_considered": [
+        {"option_id": "generic-motion-system", "label": "Sistema cinético derivado", "score": 0.62, "reason": "Legible y moderno, pero no incorpora suficientes activos oficiales.", "rejected_because": "El usuario solicitó respetar explícitamente la identidad ya establecida."},
+        {"option_id": "official-brand-assets", "label": "Activos oficiales y fondo original", "score": 0.98, "reason": "Conserva el Ángel, el avión, la tipografía trazada y los cuatro logotipos con su jerarquía."}
+      ],
+      "selected": "official-brand-assets", "reason": "Revisión solicitada por el usuario a partir del programa vertical y de la oferta comercial adjunta.", "user_visible": true, "user_approved": true, "confidence": 0.99
+    },
+    {
+      "decision_id": "d-007",
+      "stage": "assets",
+      "category": "visual_accuracy_check",
+      "subject": "Sistema tipográfico CAIJM",
+      "options_considered": [
+        {"option_id": "generic-condensed", "label": "Fallback sans condensada", "score": 0.6, "reason": "Mantiene densidad visual, pero no reproduce la jerarquía tipográfica solicitada.", "rejected_because": "El usuario pidió explícitamente Oswald o Inter como en la presentación."},
+        {"option_id": "oswald-inter", "label": "Oswald + Inter", "score": 0.98, "reason": "Oswald conserva el carácter condensado de los titulares e Inter mejora la lectura del contenido secundario."}
+      ],
+      "selected": "oswald-inter",
+      "reason": "Solicitud explícita del usuario para aproximar la composición a la presentación.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
+    },
+    {
+      "decision_id": "d-008",
+      "stage": "assets",
+      "category": "visual_accuracy_check",
+      "subject": "Jerarquía institucional del cierre",
+      "options_considered": [
+        {"option_id":"labeled-equal-row","label":"Fila equivalente con roles","score":0.55,"reason":"Explica las funciones, pero aplana la jerarquía y añade texto innecesario.","rejected_because":"El usuario pidió eliminar los rótulos y hacer protagonista a CAIJM."},
+        {"option_id":"caijm-primary-supporting-row","label":"CAIJM protagonista con fila secundaria","score":0.98,"reason":"CAIJM aparece grande; ComPEDIA, CMICA y Medevent Pro quedan debajo, más pequeños y sin etiquetas."}
+      ],
+      "selected": "caijm-primary-supporting-row",
+      "reason": "Revisión explícita solicitada por el usuario para el cierre.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
+    },
+    {
+      "decision_id": "d-009",
+      "stage": "assets",
+      "category": "visual_accuracy_check",
+      "subject": "Uso extendido del fondo oficial",
+      "options_considered": [
+        {"option_id":"opening-closing-only","label":"Solo apertura y cierre","score":0.68,"reason":"Mantiene limpieza, pero desaprovecha los elementos icónicos de la identidad.","rejected_because":"El usuario pidió usar el Ángel y el avión durante más escenas."},
+        {"option_id":"narrative-crops","label":"Recortes narrativos y zoom","score":0.94,"reason":"Integra avión, Ángel y fondo mediante acercamientos suaves sin competir con el contenido clínico."}
+      ],
+      "selected": "narrative-crops",
+      "reason": "El usuario solicitó ampliar la presencia del Ángel de la Independencia y el avión.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.96
+    }
+  ]
+}

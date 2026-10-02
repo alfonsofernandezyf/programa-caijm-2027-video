@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "assets": [
+    {"id":"composition","type":"animation","path":"hyperframes/index.html","source_tool":"hyperframes","scene_id":"all","cost_usd":0,"duration_seconds":40,"resolution":"1080x1920","format":"html","quality_score":0.94,"subtype":"atelier","generation_summary":"Composición original HTML/CSS/GSAP construida para el programa CAIJM 2027."},
+    {"id":"review-01","type":"image","path":"snapshots/scene-01-hook.png","source_tool":"hyperframes_snapshot","scene_id":"scene-01-hook","cost_usd":0,"resolution":"1080x1920","format":"png","quality_score":0.93},
+    {"id":"review-02","type":"image","path":"snapshots/scene-02-calendar.png","source_tool":"hyperframes_snapshot","scene_id":"scene-02-calendar","cost_usd":0,"resolution":"1080x1920","format":"png","quality_score":0.94},
+    {"id":"review-03","type":"image","path":"snapshots/scene-03-immunotherapy.png","source_tool":"hyperframes_snapshot","scene_id":"scene-03-immunotherapy","cost_usd":0,"resolution":"1080x1920","format":"png","quality_score":0.92},
+    {"id":"review-04","type":"image","path":"snapshots/scene-04-immunology-network.png","source_tool":"hyperframes_snapshot","scene_id":"scene-04-immunology-network","cost_usd":0,"resolution":"1080x1920","format":"png","quality_score":0.93},
+    {"id":"review-05","type":"image","path":"snapshots/scene-05-allergy-field.png","source_tool":"hyperframes_snapshot","scene_id":"scene-05-allergy-field","cost_usd":0,"resolution":"1080x1920","format":"png","quality_score":0.93},
+    {"id":"review-06","type":"image","path":"snapshots/scene-06-alignment.png","source_tool":"hyperframes_snapshot","scene_id":"scene-06-alignment","cost_usd":0,"resolution":"1080x1920","format":"png","quality_score":0.95},
+    {"id":"review-07","type":"image","path":"snapshots/scene-07-close.png","source_tool":"hyperframes_snapshot","scene_id":"scene-07-close","cost_usd":0,"resolution":"1080x1920","format":"png","quality_score":0.94},
+    {"id":"brand-caijm","type":"image","path":"hyperframes/assets/brand/caijm.png","source_tool":"ffmpeg_crop_from_supplied_svg","scene_id":"scene-01-hook","cost_usd":0,"format":"png","subtype":"provided","generation_summary":"Logotipo oficial CAIJM recortado de la oferta comercial suministrada, con el fondo blanco eliminado y transparencia alfa verificada."},
+    {"id":"brand-cmica","type":"image","path":"hyperframes/assets/brand/cmica.png","source_tool":"ffmpeg_crop_from_supplied_svg","scene_id":"scene-07-close","cost_usd":0,"format":"png","subtype":"provided","generation_summary":"Logotipo oficial CMICA con el fondo blanco eliminado y transparencia alfa verificada."},
+    {"id":"brand-compedia","type":"image","path":"hyperframes/assets/brand/compedia.png","source_tool":"ffmpeg_crop_from_supplied_svg","scene_id":"scene-07-close","cost_usd":0,"format":"png","subtype":"provided","generation_summary":"Logotipo oficial ComPEDIA con el fondo blanco eliminado y transparencia alfa verificada."},
+    {"id":"brand-medevent","type":"image","path":"hyperframes/assets/brand/medevent-pro.png","source_tool":"ffmpeg_crop_from_supplied_svg","scene_id":"scene-07-close","cost_usd":0,"format":"png","subtype":"provided","generation_summary":"Logotipo oficial Medevent Pro con el fondo blanco eliminado y transparencia alfa verificada."},
+    {"id":"brand-background","type":"image","path":"hyperframes/assets/brand/caijm-background.png","source_tool":"embedded_asset_extract","scene_id":"scene-01-hook","cost_usd":0,"resolution":"1102x1427","format":"png","subtype":"provided","generation_summary":"Fondo original del programa con Ángel de la Independencia, avión, cielo y diente de león."},
+    {"id":"event-title","type":"image","path":"hyperframes/assets/brand/event-title.png","source_tool":"ffmpeg_crop_from_supplied_svg","scene_id":"scene-07-close","cost_usd":0,"resolution":"1400x430","format":"png","subtype":"provided","generation_summary":"Lockup tipográfico exacto del nombre, edición, fechas y CDMX, con el fondo blanco eliminado y transparencia alfa verificada."},
+    {"id":"music-bed","type":"music","path":"hyperframes/assets/music/caijm-bed.mp3","source_tool":"pixabay_music","scene_id":"all","cost_usd":0,"duration_seconds":114,"format":"mp3","subtype":"stock","provider":"pixabay_music","license":"Pixabay Content License (free, no attribution required)","generation_summary":"Future Beat Music de Verclub_Music; seleccionada por su pulso electrónico limpio y sobrio."}
+  ],
+  "total_cost_usd": 0,
+  "metadata": {
+    "audio_architecture":"music_only",
+    "narration_assets":[],
+    "blocked_assets":[],
+    "tool_path_map":{"motion":"HyperFrames 0.8.112 local","music":"Pixabay Music","brand":"supplied SVG archive"},
+    "layer3_skills_read":["hyperframes","hyperframes-core","hyperframes-creative","hyperframes-animation","hyperframes-cli","media-use","visual-style","music"],
+    "validation":{"check":"passed","runtime_errors":0,"layout_errors":0,"motion_errors":0},
+    "review_surface":"snapshots/contact-sheet.jpg",
+    "typography":{"display":"Oswald","support":"Inter"}
+  }
+}

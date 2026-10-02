@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "outputs": [
+    {
+      "path": "renders/final.mp4",
+      "format": "mp4",
+      "codec": "h264",
+      "audio_codec": "aac",
+      "resolution": "1080x1920",
+      "fps": 30,
+      "duration_seconds": 40,
+      "file_size_bytes": 11076663,
+      "platform_target": "vertical-social"
+    }
+  ],
+  "render_time_seconds": 23.5,
+  "warnings": [
+    "HyperFrames reports nine non-blocking authoring warnings for the monolithic atelier composition; runtime, layout and motion validation contain no errors.",
+    "Some decorative circles and oversized background typography intentionally extend beyond the clipped canvas."
+  ],
+  "verification_notes": [
+    "Rendered through the approved HyperFrames 0.8.112 runtime with no runtime swap.",
+    "Seven representative frames were extracted from the final MP4 and visually inspected.",
+    "CAIJM, course-title, ComPEDIA, CMICA and Medevent Pro PNG assets contain real alpha transparency.",
+    "Music is present in stereo without clipping; peak level is -11.8 dB."
+  ],
+  "render_grammar": "animation-first",
+  "slideshow_risk_score": {"average": 0.33, "verdict": "strong"},
+  "decision_log_ref": "artifacts/decision_log.json",
+  "final_review_ref": "artifacts/final_review.json",
+  "metadata": {
+    "render_runtime": "hyperframes",
+    "composition_mode": "atelier",
+    "quality": "high",
+    "self_review_completed": true,
+    "review_contact_sheet": "renders/review/contact-sheet.png",
+    "revision": "CAIJM-led closing hierarchy and extended Angel/airplane crops"
+  }
+}

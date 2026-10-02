@@ -1,0 +1,118 @@
+{
+  "version": "1.0",
+  "concept_options": [
+    {
+      "id": "c1",
+      "title": "Tres sábados, un mapa clínico",
+      "hook": "Tres sábados. Un mapa clínico para 2027.",
+      "narrative_structure": "timeline",
+      "visual_approach": "Calendario cinético de tres capítulos con tipografía editorial, círculos orbitales inspirados en la marca y transiciones que conectan fecha con área clínica.",
+      "target_audience": "Alergólogos, inmunólogos, residentes y médicos jóvenes de México",
+      "target_platform": "instagram",
+      "target_duration_seconds": 40,
+      "key_points": ["16, 23 y 30 de enero de 2027 en CDMX", "Cada jornada tiene un bloque clínico reconocible", "El programa es preliminar"],
+      "core_message": "Tres jornadas concentran un recorrido actualizado por alergología e inmunología clínica.",
+      "cta": "Aparta las fechas y consulta el programa preliminar.",
+      "tone": "Académico, joven, preciso y energético",
+      "grounded_in": ["Tres jornadas en enero", "Bloques temáticos diferenciados", "Audiencia médica joven"],
+      "why_this_works": "Convierte una agenda de ocho páginas en una estructura de tres fechas fácil de recordar sin sacrificar rigor."
+    },
+    {
+      "id": "c2",
+      "title": "La agenda cobra movimiento",
+      "hook": "Enero se organiza en tres jornadas de actualización.",
+      "narrative_structure": "data_narrative",
+      "visual_approach": "Tarjetas de horario y etiquetas temáticas que se ensamblan como una agenda modular.",
+      "target_audience": "Profesionales que necesitan escanear rápidamente fechas y horarios",
+      "target_platform": "instagram",
+      "target_duration_seconds": 30,
+      "key_points": ["Fechas y horarios principales", "Áreas clínicas por jornada"],
+      "core_message": "El programa puede comprenderse de un vistazo.",
+      "cta": "Consulta la agenda preliminar.",
+      "tone": "Informativo y directo",
+      "grounded_in": ["Ocho páginas de programa", "Necesidad de escaneo móvil"],
+      "why_this_works": "Prioriza utilidad y lectura rápida para una audiencia con poco tiempo."
+    },
+    {
+      "id": "c3",
+      "title": "Conocimiento que conecta",
+      "hook": "De la inmunoterapia a la anafilaxia: todo está conectado.",
+      "narrative_structure": "journey",
+      "visual_approach": "Constelación clínica que conecta áreas y culmina en el emblema del encuentro.",
+      "target_audience": "Médicos jóvenes atraídos por la amplitud interdisciplinaria",
+      "target_platform": "instagram",
+      "target_duration_seconds": 45,
+      "key_points": ["Amplitud temática", "Conexión entre alergología e inmunología"],
+      "core_message": "La escuela conecta múltiples frentes de la práctica clínica.",
+      "cta": "Conecta con la próxima generación de especialistas.",
+      "tone": "Conceptual y cinematográfico",
+      "grounded_in": ["Amplitud temática", "Educación médica continua"],
+      "why_this_works": "Hace visible la riqueza del programa mediante una metáfora gráfica cohesionada."
+    }
+  ],
+  "selected_concept": {
+    "concept_id": "c1",
+    "rationale": "El usuario aprobó explícitamente la recomendación: es la opción con mejor equilibrio entre recordación de fechas, amplitud clínica y legibilidad móvil.",
+    "modifications": ["Formato 9:16", "Música sin locución", "Conservar la condición de programa preliminar"]
+  },
+  "production_plan": {
+    "pipeline": "animation",
+    "stages": [
+      {"stage": "script", "tools": [], "approach": "Guion de pantalla sin narración, estructurado en siete beats y cuarenta segundos."},
+      {"stage": "scene_plan", "tools": [], "approach": "Diseño de escenas distintas con una progresión calendario-tema-convocatoria."},
+      {"stage": "assets", "tools": [{"tool_name": "hyperframes", "role": "Composición HTML/CSS/GSAP y snapshots por escena", "provider": "local", "available": true, "estimated_cost_usd": 0, "why_this_provider": "Ajuste superior para tipografía cinética y motion graphics artesanales."}], "approach": "Construcción local de la composición y extracción de frames de aprobación."},
+      {"stage": "compose", "tools": [{"tool_name": "hyperframes_compose", "role": "Validación y render final", "provider": "local", "available": true, "estimated_cost_usd": 0, "why_this_provider": "Runtime aprobado por el usuario."}], "approach": "Lint, validate, snapshots, render 1080x1920 y revisión visual."}
+    ],
+    "quality_tradeoffs": [
+      {"tradeoff": "HyperFrames frente a Remotion", "recommendation": "HyperFrames", "quality_impact": "Mayor libertad tipográfica y coreografía GSAP; requiere más autoría manual."},
+      {"tradeoff": "Atelier frente a plantillas", "recommendation": "Atelier", "quality_impact": "Identidad más específica para CAIJM a cambio de mayor iteración creativa."},
+      {"tradeoff": "Música sin locución", "recommendation": "Sin locución", "quality_impact": "Evita competir con el texto clínico y funciona mejor en reproducción móvil sin sonido."}
+    ],
+    "alternative_paths": [
+      {"description": "Remotion atelier con componentes React hechos a medida", "total_cost_usd": 0, "quality_level": "standard", "what_changes": "La ejecución sería más estructurada pero menos flexible para coreografía tipográfica."},
+      {"description": "Composición templated", "total_cost_usd": 0, "quality_level": "budget", "what_changes": "Entrega más rápida con menor distintividad visual."}
+    ],
+    "delivery_promise": {"promise_type": "motion_led", "motion_required": true, "source_required": false, "tone_mode": "educational", "quality_floor": "presentable", "approved_fallback": null},
+    "renderer_family": "animation-first",
+    "render_runtime": "hyperframes",
+    "composition_mode": "atelier",
+    "art_direction": "art-direction.md — blanco clínico y azules CAIJM, Oswald para titulares y fechas, Inter para información secundaria, movimiento orbital y una firma visual de tres discos-fecha que se alinean una sola vez en el clímax.",
+    "taste_profile": {
+      "design_read": "Pieza médica juvenil de alta confianza: la precisión de una agenda científica con la energía de una nueva generación de especialistas.",
+      "visual_variance": 6,
+      "motion_intensity": 7,
+      "information_density": 5,
+      "palette_discipline": "Blanco y azul marino como base; cian eléctrico y azul medio solo para jerarquía y movimiento.",
+      "layout_variation": "Alternar apertura tipográfica, calendario espacial, paneles clínicos y cierre institucional.",
+      "reference_strategy": "Un snapshot representativo por escena antes del render completo.",
+      "anti_patterns": ["Gradientes púrpura genéricos", "Páginas del programa desplazándose como diapositivas", "Iconografía médica de stock", "Texto clínico minúsculo"],
+      "quality_gates": ["Cada fecha debe leerse en menos de un segundo", "Ninguna pantalla debe parecer una página estática del PDF", "Programa preliminar debe quedar visible al cierre"]
+    },
+    "music_source": {"source_type": "bring_your_own", "mood_direction": "Pulso electrónico limpio, contemporáneo y sobrio; sin letra.", "estimated_cost_usd": 0},
+    "voice_selection": {"provider": "none", "rationale": "El usuario aprobó música sin locución; la comunicación se apoya en texto diseñado.", "estimated_cost_usd": 0, "delivery_style": "Sin narración", "pacing_policy": "No aplica", "sample_approval_required": false},
+    "decision_log_ref": "artifacts/decision_log.json"
+  },
+  "cost_estimate": {
+    "total_estimated_usd": 0,
+    "line_items": [
+      {"tool": "HyperFrames", "operation": "Autoría, validación y render local", "quantity": 1, "estimated_usd": 0, "notes": "Runtime local instalado."},
+      {"tool": "FFmpeg", "operation": "Codificación y verificación técnica", "quantity": 1, "estimated_usd": 0, "notes": "Herramienta local."}
+    ],
+    "budget_verdict": "no_budget_set",
+    "savings_options": ["La ruta aprobada ya utiliza únicamente herramientas locales sin costo de API."]
+  },
+  "approval": {
+    "status": "approved",
+    "user_notes": "apruebo la recomendación",
+    "approved_budget_usd": 0
+  },
+  "metadata": {
+    "animation_mode": "kinetic_typography_motion_graphics",
+    "audio_architecture": "music_only",
+    "reuse_strategy": {"recurring_motifs": ["tres discos-fecha", "líneas orbitales", "etiquetas clínicas"], "layout_system": "retícula vertical modular 9:16", "transition_family": "alineación orbital y wipes circulares", "estimated_unique_scenes": 7, "estimated_reusable_templates": 0},
+    "provider_comparison": [
+      {"provider": "HyperFrames local", "cost_usd": 0, "selected": true},
+      {"provider": "Remotion local", "cost_usd": 0, "selected": false}
+    ]
+  }
+}

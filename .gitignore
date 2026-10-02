@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+.cache/
+*.log
+hyperframes/out/
+hyperframes/dist/
+renders/.final_review_frames/
+renders/.compose_tmp/

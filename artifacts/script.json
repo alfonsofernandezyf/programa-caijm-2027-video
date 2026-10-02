@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "title": "Tres sábados, un mapa clínico — CAIJM 2027",
+  "total_duration_seconds": 40,
+  "sections": [
+    {
+      "id": "s01", "label": "Hook", "text": "3 SÁBADOS", "start_seconds": 0, "end_seconds": 4,
+      "enhancement_cues": [{"type": "animation", "description": "El número 3 se divide en tres pulsos que revelan SÁBADOS."}],
+      "source_ref": "research_brief.data_points[0]"
+    },
+    {
+      "id": "s02", "label": "Fechas", "text": "16 · 23 · 30 / ENERO 2027", "start_seconds": 4, "end_seconds": 9,
+      "enhancement_cues": [{"type": "animation", "description": "Tres discos-fecha entran desde trayectorias distintas y ocupan una retícula vertical."}],
+      "source_ref": "research_brief.data_points[0]"
+    },
+    {
+      "id": "s03", "label": "Jornada 1", "text": "16 ENE / INMUNOTERAPIA / 17:00–20:00", "start_seconds": 9, "end_seconds": 15,
+      "enhancement_cues": [{"type": "animation", "description": "Macro tipográfica de INMUNOTERAPIA con etiquetas GUIMIT, SUBLINGUAL y SUBCUTÁNEA."}],
+      "source_ref": "source_media_review files 2.svg"
+    },
+    {
+      "id": "s04", "label": "Jornada 2", "text": "23 ENE / INMUNOLOGÍA CLÍNICA / 17:00–21:00", "start_seconds": 15, "end_seconds": 22,
+      "enhancement_cues": [{"type": "animation", "description": "Red clínica conecta AUTOINMUNIDAD, RESPUESTAS ADAPTATIVAS, ANGIOEDEMA y CASOS CLÍNICOS."}],
+      "source_ref": "source_media_review files 3.svg y 4.svg"
+    },
+    {
+      "id": "s05", "label": "Jornada 3", "text": "30 ENE / ALERGOLOGÍA / 09:00–16:50", "start_seconds": 22, "end_seconds": 31,
+      "enhancement_cues": [{"type": "animation", "description": "Campo editorial revela URTICARIA, ASMA, RINITIS, DERMATITIS, ANAFILAXIA, ALIMENTOS y MEDICAMENTOS por capas."}],
+      "source_ref": "source_media_review files 5.svg, 6.svg y 7.svg"
+    },
+    {
+      "id": "s06", "label": "Clímax", "text": "UN MAPA CLÍNICO / TRES JORNADAS", "start_seconds": 31, "end_seconds": 35,
+      "enhancement_cues": [{"type": "animation", "description": "Los tres discos se alinean por única vez y forman una ruta continua."}],
+      "source_ref": "research_brief.research_summary"
+    },
+    {
+      "id": "s07", "label": "Cierre", "text": "9ª ESCUELA DE ALERGÓLOGOS E INMUNÓLOGOS JÓVENES DE MÉXICO / CDMX / PROGRAMA ACADÉMICO PRELIMINAR", "start_seconds": 35, "end_seconds": 40,
+      "enhancement_cues": [{"type": "overlay", "description": "Cierre institucional con logotipos suministrados y llamada Aparta las fechas."}],
+      "source_ref": "source_media_review files 1.svg y 8.svg"
+    }
+  ],
+  "metadata": {
+    "audio_architecture": "music_only",
+    "narration": false,
+    "on_screen_text_is_primary": true,
+    "format": "1080x1920",
+    "fps": 30,
+    "runtime": "hyperframes",
+    "composition_mode": "atelier",
+    "brand_requirements": [
+      "CAIJM visible como organización protagonista",
+      "CMICA y ComPEDIA visibles como avales",
+      "Medevent Pro visible en el cierre",
+      "Fondo original del Ángel de la Independencia y el avión en apertura y cierre",
+      "Lockup tipográfico original en el cierre",
+      "Oswald para titulares y fechas; Inter para información secundaria"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "cuts": [
+    {"id":"scene-01-hook","source":"composition","in_seconds":0,"out_seconds":4,"layer":"primary","transition_in":"cut","transition_out":"cut","transition_duration":0,"reason":"Abrir con la marca, el fondo oficial y una promesa legible antes de desplegar las fechas."},
+    {"id":"scene-02-calendar","source":"composition","in_seconds":4,"out_seconds":9,"layer":"primary","transition_in":"cut","transition_out":"cut","transition_duration":0,"reason":"Dar cinco segundos a la lectura secuencial de las tres fechas."},
+    {"id":"scene-03-immunotherapy","source":"composition","in_seconds":9,"out_seconds":15,"layer":"primary","transition_in":"cut","transition_out":"cut","transition_duration":0,"reason":"Sostener el titular y revelar después las tres modalidades de inmunoterapia."},
+    {"id":"scene-04-immunology-network","source":"composition","in_seconds":15,"out_seconds":22,"layer":"primary","transition_in":"cut","transition_out":"cut","transition_duration":0,"reason":"Permitir que la red clínica se construya desde el nodo central hacia los temas secundarios."},
+    {"id":"scene-05-allergy-field","source":"composition","in_seconds":22,"out_seconds":31,"layer":"primary","transition_in":"cut","transition_out":"cut","transition_duration":0,"reason":"Dar el mayor tiempo al bloque temático más denso y mantener entradas escalonadas."},
+    {"id":"scene-06-alignment","source":"composition","in_seconds":31,"out_seconds":35,"layer":"primary","transition_in":"cut","transition_out":"cut","transition_duration":0,"reason":"Comprimir las fechas en un clímax visual claro."},
+    {"id":"scene-07-close","source":"composition","in_seconds":35,"out_seconds":40,"layer":"primary","transition_in":"cut","transition_out":"cut","transition_duration":0,"reason":"Mantener cinco segundos para leer el título, CTA, carácter preliminar y jerarquía institucional."}
+  ],
+  "overlays": [],
+  "audio": {
+    "music": {
+      "asset_id": "music-bed",
+      "volume": 0.18,
+      "fade_in_seconds": 1.2,
+      "fade_out_seconds": 1.8,
+      "ducking": false
+    },
+    "sfx": []
+  },
+  "subtitles": {"enabled": false},
+  "renderer_family": "animation-first",
+  "render_runtime": "hyperframes",
+  "composition_mode": "atelier",
+  "bespoke": {
+    "entry": "projects/programa-caijm-2027/hyperframes/index.html",
+    "composition_id": "caijm-2027",
+    "art_direction": "projects/programa-caijm-2027/art-direction.md",
+    "crf": 18,
+    "concurrency": 4
+  },
+  "slideshow_risk_score": {"average": 0.33, "verdict": "strong"},
+  "metadata": {
+    "hold_windows": ["1.5–3.8s", "6.0–8.8s", "11.2–14.8s", "18.0–21.8s", "27.5–30.8s", "33.0–34.8s", "37.2–40.0s"],
+    "stagger_rules": "Titular primero; fechas, etiquetas y marcas después. Nunca revelar todos los elementos a la vez.",
+    "transition_map": "Cortes limpios entre escenas; la continuidad proviene del azul institucional, el cian y la aceleración de las entradas.",
+    "scene_timing_notes": "El cierre conserva el hold más importante para lectura institucional y mantiene transparentes los logos CAIJM y del curso.",
+    "decision_log_ref": "artifacts/decision_log.json"
+  }
+}
