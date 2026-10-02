@@ -95,6 +95,21 @@
       "user_visible": true,
       "user_approved": true,
       "confidence": 0.96
+    },
+    {
+      "decision_id": "d-010",
+      "stage": "compose",
+      "category": "visual_accuracy_check",
+      "subject": "Polish final de composición",
+      "options_considered": [
+        {"option_id":"retain-current-finish","label":"Mantener acabado anterior","score":0.78,"reason":"Ya era funcional y respetaba los activos aprobados.","rejected_because":"Aún había oportunidades de mejorar ritmo, jerarquía, contraste y consistencia espacial."},
+        {"option_id":"flagship-polish","label":"Refinamiento flagship","score":0.97,"reason":"Unifica tokens, limpia elementos decorativos, suaviza el movimiento y convierte el Ángel y el avión en fondos cinematográficos de lienzo completo."}
+      ],
+      "selected": "flagship-polish",
+      "reason": "El usuario solicitó explícitamente aplicar polish a la composición del video.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.98
     }
   ]
 }

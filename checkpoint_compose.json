@@ -1,0 +1,436 @@
+{
+  "version": "1.0",
+  "project_id": "programa-caijm-2027",
+  "pipeline_type": "animation",
+  "stage": "compose",
+  "status": "completed",
+  "timestamp": "2026-10-02T21:24:55.928114+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "render_report": {
+      "version": "1.0",
+      "outputs": [
+        {
+          "path": "renders/final.mp4",
+          "format": "mp4",
+          "codec": "h264",
+          "audio_codec": "aac",
+          "resolution": "1080x1920",
+          "fps": 30,
+          "duration_seconds": 40,
+          "file_size_bytes": 9611125,
+          "platform_target": "vertical-social"
+        }
+      ],
+      "render_time_seconds": 22.8,
+      "warnings": [
+        "HyperFrames reports nine non-blocking authoring warnings for the monolithic atelier composition; runtime, motion and contrast validation contain no errors.",
+        "The remaining layout warning is the intentional full-canvas crop of the Angel background in scene 5."
+      ],
+      "verification_notes": [
+        "Rendered through the approved HyperFrames 0.8.112 runtime with no runtime swap.",
+        "Seven representative frames were extracted from the final MP4 and visually inspected.",
+        "Contrast validation passes 30 of 30 text checks at WCAG AA.",
+        "The polished composition removes scene counters and decorative grid lines, normalizes date typography and uses restrained easing without elastic overshoot.",
+        "Music is present in stereo without clipping; peak level is -11.8 dB."
+      ],
+      "render_grammar": "animation-first",
+      "slideshow_risk_score": {
+        "average": 0.33,
+        "verdict": "strong"
+      },
+      "decision_log_ref": "/Users/alfonso/CODE/openmontage/projects/programa-caijm-2027/decision_log.json",
+      "final_review_ref": "artifacts/final_review.json",
+      "metadata": {
+        "render_runtime": "hyperframes",
+        "composition_mode": "atelier",
+        "quality": "high",
+        "self_review_completed": true,
+        "review_contact_sheet": "renders/review/contact-sheet.png",
+        "revision": "Flagship composition polish: systematic spacing, full-canvas Angel/airplane crops and restrained motion"
+      }
+    },
+    "final_review": {
+      "version": "1.0",
+      "output_path": "renders/final.mp4",
+      "status": "pass",
+      "checks": {
+        "technical_probe": {
+          "valid_container": true,
+          "duration_seconds": 40,
+          "resolution": "1080x1920",
+          "fps": 30,
+          "has_audio": true,
+          "codec": "h264",
+          "file_size_bytes": 9611125,
+          "issues": []
+        },
+        "visual_spotcheck": {
+          "frames_sampled": 7,
+          "frame_paths": [
+            "snapshots/scene-01-hook.png",
+            "snapshots/scene-02-calendar.png",
+            "snapshots/scene-03-immunotherapy.png",
+            "snapshots/scene-04-immunology-network.png",
+            "snapshots/scene-05-allergy-field.png",
+            "snapshots/scene-06-alignment.png",
+            "snapshots/scene-07-close.png"
+          ],
+          "black_frames_detected": false,
+          "broken_overlays": false,
+          "missing_assets": false,
+          "unreadable_text": false,
+          "issues": []
+        },
+        "audio_spotcheck": {
+          "narration_present": false,
+          "music_present": true,
+          "unexpected_silence": false,
+          "clipping_detected": false,
+          "mix_intelligible": true,
+          "issues": []
+        },
+        "promise_preservation": {
+          "delivery_promise_honored": true,
+          "renderer_family_used": "animation-first",
+          "render_runtime_used": "hyperframes",
+          "runtime_swap_detected": false,
+          "runtime_swap_check": "ok \u2014 proposal and edit agree on HyperFrames",
+          "motion_ratio_actual": 1,
+          "silent_downgrade_detected": false,
+          "issues": []
+        },
+        "subtitle_check": {
+          "subtitles_expected": false,
+          "subtitles_present": false,
+          "coverage_ratio": 1,
+          "timing_drift_detected": false,
+          "issues": []
+        },
+        "atelier": {
+          "stock_reuse_detected": false,
+          "offending_imports": [],
+          "art_direction_declared": true,
+          "art_direction": "art-direction.md",
+          "issues": []
+        }
+      },
+      "issues_found": [],
+      "recommended_action": "present_to_user",
+      "metadata": {
+        "review_contact_sheet": "renders/review/contact-sheet.png",
+        "music_mean_volume_db": -23.5,
+        "music_peak_volume_db": -11.8,
+        "self_review_completed": true,
+        "revision_checked": "Flagship polish verified: CAIJM hierarchy preserved; supporting logos remain secondary; Angel and airplane use seamless full-canvas crops; 30/30 text contrast checks pass"
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "programa-caijm-2027",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "proposal",
+          "category": "concept_selection",
+          "subject": "Concepto narrativo principal",
+          "options_considered": [
+            {
+              "option_id": "c1",
+              "label": "Tres s\u00e1bados, un mapa cl\u00ednico",
+              "score": 0.93,
+              "reason": "M\u00e1xima recordaci\u00f3n y claridad."
+            },
+            {
+              "option_id": "c2",
+              "label": "La agenda cobra movimiento",
+              "score": 0.77,
+              "reason": "Muy informativo, menos distintivo.",
+              "rejected_because": "Menor impacto de marca."
+            },
+            {
+              "option_id": "c3",
+              "label": "Conocimiento que conecta",
+              "score": 0.81,
+              "reason": "Visualmente rico, menos preciso con fechas.",
+              "rejected_because": "Prioriza met\u00e1fora sobre agenda."
+            }
+          ],
+          "selected": "c1",
+          "reason": "Aprobaci\u00f3n expl\u00edcita del usuario y mejor equilibrio entre rigor, recordaci\u00f3n y ritmo.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Runtime de composici\u00f3n",
+          "options_considered": [
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.94,
+              "reason": "Ideal para tipograf\u00eda cin\u00e9tica y HTML/CSS/GSAP."
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.82,
+              "reason": "Excelente para timelines React reutilizables.",
+              "rejected_because": "Menor ventaja para esta coreograf\u00eda tipogr\u00e1fica artesanal."
+            }
+          ],
+          "selected": "hyperframes",
+          "reason": "El usuario aprob\u00f3 la recomendaci\u00f3n despu\u00e9s de ver ambas alternativas y sus tradeoffs.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "Modo de autor\u00eda",
+          "options_considered": [
+            {
+              "option_id": "atelier",
+              "label": "Atelier",
+              "score": 0.96,
+              "reason": "Pieza hero \u00fanica con lenguaje visual propio."
+            },
+            {
+              "option_id": "templated",
+              "label": "Templated",
+              "score": 0.66,
+              "reason": "M\u00e1s r\u00e1pido y repetible.",
+              "rejected_because": "El entregable \u00fanico merece mayor distintividad."
+            }
+          ],
+          "selected": "atelier",
+          "reason": "Aprobaci\u00f3n expl\u00edcita; el video requiere identidad espec\u00edfica de CAIJM.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.96
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "proposal",
+          "category": "music_source",
+          "subject": "Arquitectura de audio",
+          "options_considered": [
+            {
+              "option_id": "music_only",
+              "label": "M\u00fasica sin locuci\u00f3n",
+              "score": 0.91,
+              "reason": "Favorece lectura m\u00f3vil y no compite con los t\u00e9rminos cl\u00ednicos."
+            },
+            {
+              "option_id": "kokoro_voice",
+              "label": "Locuci\u00f3n local Kokoro m\u00e1s m\u00fasica",
+              "score": 0.74,
+              "reason": "A\u00f1ade gu\u00eda auditiva.",
+              "rejected_because": "Sobrecarga una pieza breve ya intensiva en texto."
+            }
+          ],
+          "selected": "music_only",
+          "reason": "Aprobado por el usuario como parte de la recomendaci\u00f3n.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "proposal",
+          "category": "renderer_family_selection",
+          "subject": "Gram\u00e1tica creativa",
+          "options_considered": [
+            {
+              "option_id": "animation-first",
+              "label": "Animation-first",
+              "score": 0.95,
+              "reason": "El material fuente es gr\u00e1fico y la promesa depende del movimiento."
+            },
+            {
+              "option_id": "documentary-montage",
+              "label": "Documentary montage",
+              "score": 0.45,
+              "reason": "Adecuado si hubiera metraje.",
+              "rejected_because": "No existe footage fuente."
+            }
+          ],
+          "selected": "animation-first",
+          "reason": "Preserva nitidez, jerarqu\u00eda y energ\u00eda con los recursos realmente disponibles.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.97
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "assets",
+          "category": "visual_accuracy_check",
+          "subject": "Fidelidad a la identidad visual CAIJM",
+          "options_considered": [
+            {
+              "option_id": "generic-motion-system",
+              "label": "Sistema cin\u00e9tico derivado",
+              "score": 0.62,
+              "reason": "Legible y moderno, pero no incorpora suficientes activos oficiales.",
+              "rejected_because": "El usuario solicit\u00f3 respetar expl\u00edcitamente la identidad ya establecida."
+            },
+            {
+              "option_id": "official-brand-assets",
+              "label": "Activos oficiales y fondo original",
+              "score": 0.98,
+              "reason": "Conserva el \u00c1ngel, el avi\u00f3n, la tipograf\u00eda trazada y los cuatro logotipos con su jerarqu\u00eda."
+            }
+          ],
+          "selected": "official-brand-assets",
+          "reason": "Revisi\u00f3n solicitada por el usuario a partir del programa vertical y de la oferta comercial adjunta.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.99
+        },
+        {
+          "decision_id": "d-007",
+          "stage": "assets",
+          "category": "visual_accuracy_check",
+          "subject": "Sistema tipogr\u00e1fico CAIJM",
+          "options_considered": [
+            {
+              "option_id": "generic-condensed",
+              "label": "Fallback sans condensada",
+              "score": 0.6,
+              "reason": "Mantiene densidad visual, pero no reproduce la jerarqu\u00eda tipogr\u00e1fica solicitada.",
+              "rejected_because": "El usuario pidi\u00f3 expl\u00edcitamente Oswald o Inter como en la presentaci\u00f3n."
+            },
+            {
+              "option_id": "oswald-inter",
+              "label": "Oswald + Inter",
+              "score": 0.98,
+              "reason": "Oswald conserva el car\u00e1cter condensado de los titulares e Inter mejora la lectura del contenido secundario."
+            }
+          ],
+          "selected": "oswald-inter",
+          "reason": "Solicitud expl\u00edcita del usuario para aproximar la composici\u00f3n a la presentaci\u00f3n.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.99
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "assets",
+          "category": "visual_accuracy_check",
+          "subject": "Jerarqu\u00eda institucional del cierre",
+          "options_considered": [
+            {
+              "option_id": "labeled-equal-row",
+              "label": "Fila equivalente con roles",
+              "score": 0.55,
+              "reason": "Explica las funciones, pero aplana la jerarqu\u00eda y a\u00f1ade texto innecesario.",
+              "rejected_because": "El usuario pidi\u00f3 eliminar los r\u00f3tulos y hacer protagonista a CAIJM."
+            },
+            {
+              "option_id": "caijm-primary-supporting-row",
+              "label": "CAIJM protagonista con fila secundaria",
+              "score": 0.98,
+              "reason": "CAIJM aparece grande; ComPEDIA, CMICA y Medevent Pro quedan debajo, m\u00e1s peque\u00f1os y sin etiquetas."
+            }
+          ],
+          "selected": "caijm-primary-supporting-row",
+          "reason": "Revisi\u00f3n expl\u00edcita solicitada por el usuario para el cierre.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.99
+        },
+        {
+          "decision_id": "d-009",
+          "stage": "assets",
+          "category": "visual_accuracy_check",
+          "subject": "Uso extendido del fondo oficial",
+          "options_considered": [
+            {
+              "option_id": "opening-closing-only",
+              "label": "Solo apertura y cierre",
+              "score": 0.68,
+              "reason": "Mantiene limpieza, pero desaprovecha los elementos ic\u00f3nicos de la identidad.",
+              "rejected_because": "El usuario pidi\u00f3 usar el \u00c1ngel y el avi\u00f3n durante m\u00e1s escenas."
+            },
+            {
+              "option_id": "narrative-crops",
+              "label": "Recortes narrativos y zoom",
+              "score": 0.94,
+              "reason": "Integra avi\u00f3n, \u00c1ngel y fondo mediante acercamientos suaves sin competir con el contenido cl\u00ednico."
+            }
+          ],
+          "selected": "narrative-crops",
+          "reason": "El usuario solicit\u00f3 ampliar la presencia del \u00c1ngel de la Independencia y el avi\u00f3n.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.96
+        },
+        {
+          "decision_id": "d-010",
+          "stage": "compose",
+          "category": "visual_accuracy_check",
+          "subject": "Polish final de composici\u00f3n",
+          "options_considered": [
+            {
+              "option_id": "retain-current-finish",
+              "label": "Mantener acabado anterior",
+              "score": 0.78,
+              "reason": "Ya era funcional y respetaba los activos aprobados.",
+              "rejected_because": "A\u00fan hab\u00eda oportunidades de mejorar ritmo, jerarqu\u00eda, contraste y consistencia espacial."
+            },
+            {
+              "option_id": "flagship-polish",
+              "label": "Refinamiento flagship",
+              "score": 0.97,
+              "reason": "Unifica tokens, limpia elementos decorativos, suaviza el movimiento y convierte el \u00c1ngel y el avi\u00f3n en fondos cinematogr\u00e1ficos de lienzo completo."
+            }
+          ],
+          "selected": "flagship-polish",
+          "reason": "El usuario solicit\u00f3 expl\u00edcitamente aplicar polish a la composici\u00f3n del video.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        }
+      ]
+    }
+  },
+  "review": {
+    "decision": "PASS",
+    "round": 3,
+    "findings": [
+      {
+        "severity": "suggestion",
+        "title": "Intentional atelier warnings",
+        "description": "Nine authoring warnings and one intentional full-canvas crop warning remain; runtime, motion and contrast contain zero errors.",
+        "proposed_change": "Keep the atelier structure unless future Studio scene-row editing is required.",
+        "status": "accepted"
+      }
+    ],
+    "summary": {
+      "critical": 0,
+      "suggestions": 1,
+      "nitpicks": 0,
+      "success_criteria": "met",
+      "visual_frames_reviewed": 7,
+      "self_review_completed": true
+    }
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0,
+    "total_reserved_usd": 0,
+    "budget_remaining_usd": 0
+  },
+  "metadata": {
+    "deliverable": "renders/final.mp4",
+    "runtime": "hyperframes",
+    "quality": "high",
+    "revision": "flagship composition polish"
+  }
+}

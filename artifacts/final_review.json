@@ -10,7 +10,7 @@
       "fps": 30,
       "has_audio": true,
       "codec": "h264",
-      "file_size_bytes": 11076663,
+      "file_size_bytes": 9611125,
       "issues": []
     },
     "visual_spotcheck": {
@@ -70,6 +70,6 @@
     "music_mean_volume_db": -23.5,
     "music_peak_volume_db": -11.8,
     "self_review_completed": true,
-    "revision_checked": "CAIJM large; ComPEDIA, CMICA and Medevent Pro smaller without role labels; Angel and airplane reused through masked crops"
+    "revision_checked": "Flagship polish verified: CAIJM hierarchy preserved; supporting logos remain secondary; Angel and airplane use seamless full-canvas crops; 30/30 text contrast checks pass"
   }
 }

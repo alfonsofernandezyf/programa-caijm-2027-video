@@ -9,19 +9,20 @@
       "resolution": "1080x1920",
       "fps": 30,
       "duration_seconds": 40,
-      "file_size_bytes": 11076663,
+      "file_size_bytes": 9611125,
       "platform_target": "vertical-social"
     }
   ],
-  "render_time_seconds": 23.5,
+  "render_time_seconds": 22.8,
   "warnings": [
-    "HyperFrames reports nine non-blocking authoring warnings for the monolithic atelier composition; runtime, layout and motion validation contain no errors.",
-    "Some decorative circles and oversized background typography intentionally extend beyond the clipped canvas."
+    "HyperFrames reports nine non-blocking authoring warnings for the monolithic atelier composition; runtime, motion and contrast validation contain no errors.",
+    "The remaining layout warning is the intentional full-canvas crop of the Angel background in scene 5."
   ],
   "verification_notes": [
     "Rendered through the approved HyperFrames 0.8.112 runtime with no runtime swap.",
     "Seven representative frames were extracted from the final MP4 and visually inspected.",
-    "CAIJM, course-title, ComPEDIA, CMICA and Medevent Pro PNG assets contain real alpha transparency.",
+    "Contrast validation passes 30 of 30 text checks at WCAG AA.",
+    "The polished composition removes scene counters and decorative grid lines, normalizes date typography and uses restrained easing without elastic overshoot.",
     "Music is present in stereo without clipping; peak level is -11.8 dB."
   ],
   "render_grammar": "animation-first",
@@ -34,6 +35,6 @@
     "quality": "high",
     "self_review_completed": true,
     "review_contact_sheet": "renders/review/contact-sheet.png",
-    "revision": "CAIJM-led closing hierarchy and extended Angel/airplane crops"
+    "revision": "Flagship composition polish: systematic spacing, full-canvas Angel/airplane crops and restrained motion"
   }
 }
