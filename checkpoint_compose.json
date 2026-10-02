@@ -4,7 +4,7 @@
   "pipeline_type": "animation",
   "stage": "compose",
   "status": "completed",
-  "timestamp": "2026-10-02T21:24:55.928114+00:00",
+  "timestamp": "2026-10-02T21:33:51.974919+00:00",
   "checkpoint_policy": "guided",
   "human_approval_required": false,
   "human_approved": false,
@@ -20,11 +20,11 @@
           "resolution": "1080x1920",
           "fps": 30,
           "duration_seconds": 40,
-          "file_size_bytes": 9611125,
+          "file_size_bytes": 9607620,
           "platform_target": "vertical-social"
         }
       ],
-      "render_time_seconds": 22.8,
+      "render_time_seconds": 21.7,
       "warnings": [
         "HyperFrames reports nine non-blocking authoring warnings for the monolithic atelier composition; runtime, motion and contrast validation contain no errors.",
         "The remaining layout warning is the intentional full-canvas crop of the Angel background in scene 5."
@@ -64,7 +64,7 @@
           "fps": 30,
           "has_audio": true,
           "codec": "h264",
-          "file_size_bytes": 9611125,
+          "file_size_bytes": 9607620,
           "issues": []
         },
         "visual_spotcheck": {
@@ -403,7 +403,7 @@
   },
   "review": {
     "decision": "PASS",
-    "round": 3,
+    "round": 4,
     "findings": [
       {
         "severity": "suggestion",
@@ -431,6 +431,6 @@
     "deliverable": "renders/final.mp4",
     "runtime": "hyperframes",
     "quality": "high",
-    "revision": "flagship composition polish"
+    "revision": "approved polished composition rerender"
   }
 }

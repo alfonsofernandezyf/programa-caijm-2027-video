@@ -9,11 +9,11 @@
       "resolution": "1080x1920",
       "fps": 30,
       "duration_seconds": 40,
-      "file_size_bytes": 9611125,
+      "file_size_bytes": 9607620,
       "platform_target": "vertical-social"
     }
   ],
-  "render_time_seconds": 22.8,
+  "render_time_seconds": 21.7,
   "warnings": [
     "HyperFrames reports nine non-blocking authoring warnings for the monolithic atelier composition; runtime, motion and contrast validation contain no errors.",
     "The remaining layout warning is the intentional full-canvas crop of the Angel background in scene 5."
